@@ -1,0 +1,23 @@
+{
+  "name": "openfin_webdriverio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-webdriver": "^2.0.3",
+    "mocha": "^5.2.0",
+    "selenium-standalone": "^6.15.2"
+  },
+  "devDependencies": {
+    "wdio-jasmine-framework": "^0.3.6",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.13.2"
+  },
+  "scripts": {
+    "test": "wdio  wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
