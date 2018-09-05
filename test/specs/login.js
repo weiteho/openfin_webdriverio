@@ -70,4 +70,12 @@ describe('OpenFin with webdriver.io', function () {
         switchToWindow("Google");
     });
 
+    it("Close the application", ()=>{
+        should.exist(browser);
+        browser.pause(5000);
+        browser.execute(()=>{
+            fin.desktop.Application.getCurrent().close();
+        });
+    });
+
 });
