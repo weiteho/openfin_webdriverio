@@ -4,9 +4,6 @@
   "main": "index.js",
   "dependencies": {
     "chai": "^4.1.2",
-    "gulp": "^3.9.1",
-    "gulp-webdriver": "^2.0.3",
-    "mocha": "^5.2.0",
     "selenium-standalone": "^6.15.2"
   },
   "devDependencies": {
