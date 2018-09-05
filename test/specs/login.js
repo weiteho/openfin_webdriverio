@@ -42,6 +42,21 @@ describe('OpenFin with webdriver.io', function () {
         }
     }
 
+    it("Verify openfin version", ()=>{
+        should.exist(browser);
+
+        waitForFinDesktop(()=>{
+            var result = browser.executeAsync((callback)=>{
+                fin.desktop.System.getVersion((v)=>{
+                    callback(v);
+                });
+            });
+
+            //verify version number matches.
+            should.equal(result.value, "9.61.33.32",);
+        });
+    });
+
     it("Switch to login window", () => {
         should.exist(browser);
         switchToWindow("openfin_selenium_login");
