@@ -15,7 +15,7 @@
     "webdriverio": "^4.13.2"
   },
   "scripts": {
-    "test": "wdio  wdio.conf.js"
+    "test": "wdio wdio.conf.js"
   },
   "author": "",
   "license": "ISC",

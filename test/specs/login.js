@@ -52,7 +52,7 @@ describe('OpenFin with webdriver.io', function () {
         browser.setValue("#openfin_username", "openfin_selenium");
         browser.setValue("#openfin_password", "test1234");
         browser.click("#btnLogin");
-        browser.pause(1000); //after clicking on the login button, it closes the login windown, without the pause, switchToWindow call will fail 
+        browser.pause(1000); //after clicking on the login button, it closes the login window, without the pause, switchToWindow call will fail 
     });
 
     it("Switch to launch bar", () => {
