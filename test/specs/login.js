@@ -46,6 +46,8 @@ describe('OpenFin with webdriver.io', function () {
         should.exist(browser);
 
         waitForFinDesktop(()=>{
+
+            browser.timeouts('script', 10000);
             var result = browser.executeAsync((callback)=>{
                 fin.desktop.System.getVersion((v)=>{
                     callback(v);
